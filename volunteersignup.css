@@ -1,6 +1,5 @@
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&family=Yesteryear&display=swap');
-
 /* end font import */
 
 /* start global styles */
@@ -98,7 +97,7 @@ a {
     font-size: 2.1rem;
      -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0.678); */
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.678);
  }  
 /* end navigation styles */
 
@@ -173,11 +172,6 @@ button:hover {
 }
 /* end sign up form styles */
 
-
-
-
-
-
 /* start bottom nav styles */
  .logo-bottom {
     font-family: 'Yesteryear', cursive;
@@ -194,7 +188,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: row-reverse;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
     bottom: 0;
     z-index: 1;
@@ -223,7 +217,7 @@ button:hover {
     font-size: 2.1rem;
      -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0.678); */
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.678);
  }
 /* end bottom nav styles */
 
@@ -236,6 +230,4 @@ button:hover {
     padding: .5rem .5rem;
     font-family: initial;
 }
-
-
 /* end footer styles */
