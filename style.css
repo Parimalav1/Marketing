@@ -117,14 +117,14 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 14rem;
+    padding-top: 8rem;
     color: white;
     text-shadow: .1rem .2rem .5rem black;
 }
 
 .landing-text h1 {
     font-family: 'Yesteryear', cursive;
-    font-size: 10rem;
+    font-size: 17rem;
     color:rgb(151, 182, 135);
 }
 
