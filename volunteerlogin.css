@@ -44,17 +44,18 @@ html::-webkit-scrollbar {
 }
 
 section {
-    margin: 0rem 4.5rem 0rem 4.5rem;
-    text-align: center;
+    margin: 10rem 4.5rem 5rem 4.5rem;
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+    background: linear-gradient(-30deg, rgb(151, 182, 135) 0%, white 50%, rgb(151, 182, 135) 100%);
+    animation: animate 10s linear infinite;
 }
+
 
 a {
     text-decoration: none;
-    color: grey;
-}
-
-form {
-    border: 3px solid black;
+    color: rgb(40, 143, 228);
 }
 
 /*  end global styles */
@@ -110,63 +111,79 @@ form {
 /* end navigation styles */
 
 /* start form styles */
-.login-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10rem 15rem 10rem 15rem;
+
+.box {
+  position: relative;
+  margin: 1.5rem;
+  padding: 0rem 2rem 0rem 2rem;
+  width: 15rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, .1);
+  border: .5rem solid rgba(0, 0, 0, 0.075);
+  border-radius: 2rem;
+  box-shadow: .5rem .9rem .5rem rgba(0, 0, 0, 0.61);
 }
 
-h2 {
-    font-size: 3rem;
-}
-
-input[type=text], input[type=password] {
+.box .form {
+  position: relative;
   width: 100%;
-  padding: 1rem 2rem;
-  margin: .8rem 0;
-  border: 1px solid rgb(0, 0, 0);
-  box-sizing: border-box;
 }
 
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
+.box .form h2 {
+  color: black;
+  letter-spacing: .03rem;
+  margin-bottom: 3rem;
+}
+
+.box .form .input-box {
+  position: relative;
+  width: 100%;
+  margin-bottom: .8rem;
+}
+
+.box .form .input-box input {
+  width: 100%;
+  outline: none;
+  border:  solid rgba(0, 0, 0, 0.397);
+  background: transparent;
+  padding: .3rem .2rem;
+  border-radius: .4rem;
+  box-shadow: inset 0rem 0rem .5rem rgba(151, 182, 135, 0.76);
+  font-size: .7rem;
+}
+
+.box .form .input-box input[type=text], 
+.box .form .input-box input[type=password] {
+  padding-left: 2rem;
+}
+
+.box .form .input-box input[type=submit] {
+  max-width: 5rem;
+}
+
+.box .form .input-box i {
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
+  transform: scale(0.7);
+}
+
+.remember {
+  position: relative;
+  display: inline-block;
+  margin-bottom: .3rem;
   cursor: pointer;
-  width: 20%;
 }
 
-button:hover {
-  opacity: 0.8;
+.box .form .remember input[type=checkbox] {
+  margin: 0rem .3rem 0rem 0rem;
 }
 
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
-
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
-.container {
-  padding: 16px;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
+.form p {
+  margin-bottom: .3rem;
 }
 /* end form styles */
 
@@ -199,6 +216,7 @@ span.psw {
 .nav-list-bottom {
     display: flex;
     justify-content: right;
+
 }
 
 .nav-list-bottom a {
